@@ -10,7 +10,7 @@ class Tabs extends React.Component {
     onClick(num) {
         this.setState({ idx: num })
     }
-
+    // changing the active tab to num onClick(idx =2).  
     render() {
         let {idx} = this.state;
         console.log(idx);

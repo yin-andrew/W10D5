@@ -161,14 +161,12 @@ var Header = /*#__PURE__*/function (_React$Component) {
   var _super = _createSuper(Header);
 
   function Header(props) {
-    var _this;
-
     _classCallCheck(this, Header);
 
-    _this = _super.call(this, props);
-    props.array;
-    return _this;
-  }
+    return _super.call(this, props);
+  } //array of all tabs [1,2,3]
+  //if the current index idx =1, display 1. hide 2 and 3
+
 
   _createClass(Header, [{
     key: "render",
@@ -283,7 +281,8 @@ var Tabs = /*#__PURE__*/function (_React$Component) {
       this.setState({
         idx: num
       });
-    }
+    } // changing the active tab to num onClick(idx =2).  
+
   }, {
     key: "render",
     value: function render() {
